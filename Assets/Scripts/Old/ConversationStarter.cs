@@ -55,12 +55,17 @@ public class ConversationStarter : MonoBehaviour
         }
         
     }
-    private void OnTriggerStay(Collider other)
+   // private void OnTriggerStay(Collider other)
+   // {
+   //     cantalk = true;
+    //}
+
+    private void OnTriggerEnter(Collider other)
     {
         cantalk = true;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         cantalk = false;
     }
